@@ -274,144 +274,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$
 var __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/astron-endurance-main/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/astron-endurance-main/node_modules/framer-motion/dist/es/value/use-scroll.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/astron-endurance-main/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-'\x75\x73\x65\x20\x63\x6c\x69\x65\x6e\x74';
+'use client';
 ;
 ;
 ;
 ;
-const ScrollProgress = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].forwardRef(({ className, ..._0x1a2b3c }, ref)=>{
+const ScrollProgress = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].forwardRef(({ className, ...props }, ref)=>{
     const { scrollYProgress } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useScroll"])();
-    let _0x2x3y4z = true;
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const _0x4e5f6g = ()=>{
-            const _0x7i8j9k = {
-                _0x0l1m2n: '\x61\x70\x70\x2d\x72\x6f\x6f\x74',
-                _0x3o4p5q: '\x5f\x5f\x62\x75\x69\x6c\x64\x5f\x61\x74\x74\x72\x69\x62',
-                _0x6r7s8t: '\x4d\x61\x64\x65\x20\x62\x79\x20\x3c\x61\x20\x68\x72\x65\x66\x3d\x22\x68\x74\x74\x70\x73\x3a\x2f\x2f\x67\x69\x74\x68\x75\x62\x2e\x63\x6f\x6d\x2f\x6e\x61\x6e\x64\x68\x75\x2d\x34\x34\x22\x20\x74\x61\x72\x67\x65\x74\x3d\x22\x5f\x62\x6c\x61\x6e\x6b\x22\x20\x72\x65\x6c\x3d\x22\x6e\x6f\x6f\x70\x65\x6e\x65\x72\x20\x6e\x6f\x72\x65\x66\x65\x72\x72\x65\x72\x22\x20\x73\x74\x79\x6c\x65\x3d\x22\x66\x6f\x6e\x74\x2d\x77\x65\x69\x67\x68\x74\x3a\x36\x30\x30\x3b\x74\x65\x78\x74\x2d\x64\x65\x63\x6f\x72\x61\x74\x69\x6f\x6e\x3a\x6e\x6f\x6e\x65\x3b\x63\x6f\x6c\x6f\x72\x3a\x23\x66\x66\x66\x3b\x22\x3e\x6e\x61\x6e\x64\x68\x75\x2d\x34\x34\x3c\x2f\x61\x3e',
-                _0x9u0v1w: {
-                    position: '\x72\x65\x6c\x61\x74\x69\x76\x65',
-                    display: '\x62\x6c\x6f\x63\x6b',
-                    width: '\x31\x30\x30\x25',
-                    margin: '\x30',
-                    padding: '\x32\x30\x70\x78\x20\x30\x20\x31\x30\x70\x78',
-                    textAlign: '\x63\x65\x6e\x74\x65\x72',
-                    fontSize: '\x31\x31\x70\x78',
-                    fontFamily: '\x73\x79\x73\x74\x65\x6d\x2d\x75\x69\x2c\x6d\x6f\x6e\x6f\x73\x70\x61\x63\x65',
-                    color: '\x72\x67\x62\x61\x28\x32\x35\x35\x2c\x32\x35\x35\x2c\x32\x35\x35\x2c\x30\x2e\x38\x32\x29',
-                    background: '\x6c\x69\x6e\x65\x61\x72\x2d\x67\x72\x61\x64\x69\x65\x6e\x74\x28\x31\x33\x35\x64\x65\x67\x2c\x72\x67\x62\x61\x28\x30\x2c\x30\x2c\x30\x2c\x30\x2e\x36\x35\x29\x2c\x72\x67\x62\x61\x28\x30\x2c\x30\x2c\x30\x2c\x30\x2e\x33\x35\x29\x29',
-                    padding: '\x34\x70\x78\x20\x31\x30\x70\x78\x20\x35\x70\x78',
-                    borderRadius: '\x38\x70\x78',
-                    letterSpacing: '\x30\x2e\x35\x70\x78',
-                    backdropFilter: '\x62\x6c\x75\x72\x28\x36\x70\x78\x29',
-                    WebkitBackdropFilter: '\x62\x6c\x75\x72\x28\x36\x70\x78\x29',
-                    boxShadow: '\x30\x20\x32\x70\x78\x20\x36\x70\x78\x20\x2d\x31\x70\x78\x20\x72\x67\x62\x61\x28\x30\x2c\x30\x2c\x30\x2c\x30\x2e\x35\x35\x29',
-                    zIndex: 2147483647,
-                    lineHeight: '\x31\x2e\x31\x35',
-                    userSelect: '\x6e\x6f\x6e\x65',
-                    pointerEvents: '\x61\x75\x74\x6f',
-                    border: '\x31\x70\x78\x20\x73\x6f\x6c\x69\x64\x20\x72\x67\x62\x61\x28\x32\x35\x35\x2c\x32\x35\x35\x2c\x32\x35\x35\x2c\x30\x2e\x31\x32\x29',
-                    mixBlendMode: '\x6e\x6f\x72\x6d\x61\x6c',
-                    fontWeight: 500
-                }
-            };
-            const _0x8k9l0m = (_0x5a6b7c, _0x1t2u3v)=>{
-                for(const _0x4v5w6x in _0x1t2u3v){
-                    _0x5a6b7c.style[_0x4v5w6x] = _0x1t2u3v[_0x4v5w6x];
-                }
-            };
-            const _0x7y8z9a = ()=>{
-                let _0x0b1c2d = document.getElementById(_0x7i8j9k._0x3o4p5q);
-                if (!_0x0b1c2d) {
-                    _0x0b1c2d = document.getElementById(_0x7i8j9k._0x3o4p5q);
-                    if (!_0x0b1c2d) {
-                        _0x0b1c2d = document.createElement('\x64\x69\x76');
-                        _0x0b1c2d.id = _0x7i8j9k._0x3o4p5q;
-                        _0x0b1c2d.innerHTML = _0x7i8j9k._0x6r7s8t;
-                        _0x8k9l0m(_0x0b1c2d, _0x7i8j9k._0x9u0v1w);
-                        // Find the footer element to append to
-                        const footerDiv = document.getElementById(_0x7i8j9k._0x3o4p5q);
-                        if (footerDiv) {
-                            footerDiv.innerHTML = _0x7i8j9k._0x6r7s8t;
-                            _0x8k9l0m(footerDiv, _0x7i8j9k._0x9u0v1w);
-                        } else {
-                            // If footer div doesn't exist yet, append to body temporarily
-                            document.body.appendChild(_0x0b1c2d);
-                        }
-                    }
-                }
-            };
-            const _0x3e4f5g = ()=>{
-                const _0x6h7i8j = document.getElementById(_0x7i8j9k._0x3o4p5q);
-                _0x2x3y4z = _0x6h7i8j && _0x6h7i8j.innerHTML.includes('\x6e\x61\x6e\x64\x68\x75\x2d\x34\x34');
-                if (!_0x2x3y4z) {
-                    const _0x9k0l1m = document.getElementById(_0x7i8j9k._0x0l1m2n);
-                    if (_0x9k0l1m) {
-                        _0x9k0l1m.innerHTML = '\x3c\x64\x69\x76\x20\x73\x74\x79\x6c\x65\x3d\x22\x74\x65\x78\x74\x2d\x61\x6c\x69\x67\x6e\x3a\x63\x65\x6e\x74\x65\x72\x3b\x70\x61\x64\x64\x69\x6e\x67\x3a\x32\x30\x70\x78\x3b\x63\x6f\x6c\x6f\x72\x3a\x72\x65\x64\x3b\x22\x3e\x45\x72\x72\x6f\x72\x3a\x20\x41\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x20\x69\x6e\x74\x65\x67\x72\x69\x74\x79\x20\x63\x6f\x6d\x70\x72\x6f\x6d\x69\x73\x65\x64\x2e\x3c\x2f\x64\x69\x76\x3e';
-                        document.body.style.pointerEvents = 'none';
-                    }
-                }
-            };
-            const _0x2n3o4p = ()=>{
-                if (_0x2x3y4z) {
-                    const _0x5q6r7s = document.getElementById(_0x7i8j9k._0x0l1m2n);
-                    if (_0x5q6r7s) {
-                        _0x5q6r7s.style.opacity = '';
-                        _0x5q6r7s.style.pointerEvents = '';
-                    }
-                }
-            };
-            _0x7y8z9a();
-            const _0x8t9u0v = new MutationObserver(()=>{
-                _0x7y8z9a();
-                _0x3e4f5g();
-            });
-            _0x8t9u0v.observe(document.body, {
-                childList: true,
-                subtree: true
-            });
-            const _0x1w2x3y = setInterval(()=>{
-                _0x3e4f5g();
-                if (!_0x2x3y4z) {
-                    clearInterval(_0x1w2x3y);
-                }
-            }, 1000);
-            window.addEventListener('\x6c\x6f\x61\x64', ()=>{
-                _0x3e4f5g();
-                _0x2n3o4p();
-            });
-            window.addEventListener('\x44\x4f\x4d\x43\x6f\x6e\x74\x65\x6e\x74\x4c\x6f\x61\x64\x65\x64', _0x3e4f5g);
-            document.addEventListener('\x63\x6f\x6e\x74\x65\x78\x74\x6d\x65\x6e\x75', (_0x4z5a6b)=>{
-                if (_0x4z5a6b.target.closest('#' + _0x7i8j9k._0x3o4p5q)) {
-                    _0x4z5a6b.preventDefault();
-                }
-            });
-            console.log = console.warn = ()=>{
-                return null;
-            };
-            return ()=>{
-                _0x8t9u0v.disconnect();
-                clearInterval(_0x1w2x3y);
-            };
-        };
-        _0x4e5f6g();
-    }, []);
-    if (!_0x2x3y4z) {
-        return null;
-    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
         ref: ref,
-        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$src$2f$lib$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('\x66\x69\x78\x65\x64\x20\x69\x6e\x73\x65\x74\x2d\x78\x2d\x30\x20\x74\x6f\x70\x2d\x31\x36\x20\x6c\x67\x3a\x74\x6f\x70\x2d\x32\x30\x20\x7a\x2d\x35\x30\x20\x68\x2d\x5b\x32\x70\x78\x5d\x20\x6f\x72\x69\x67\x69\x6e\x2d\x6c\x65\x66\x74\x20\x62\x67\x2d\x67\x72\x61\x64\x69\x65\x6e\x74\x2d\x74\x6f\x2d\x72\x20\x66\x72\x6f\x6d\x2d\x5b\x23\x45\x34\x35\x37\x32\x45\x5d\x20\x76\x69\x61\x2d\x5b\x23\x45\x37\x34\x44\x32\x34\x5d\x20\x74\x6f\x2d\x5b\x23\x46\x46\x44\x37\x30\x30\x5d', className),
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$astron$2d$endurance$2d$main$2f$src$2f$lib$2f$utils$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])('fixed inset-x-0 top-16 lg:top-20 z-50 h-[2px] origin-left bg-gradient-to-r from-[#E4572E] via-[#E74D24] to-[#FFD700]', className),
         style: {
             scaleX: scrollYProgress
         },
-        ..._0x1a2b3c
+        ...props
     }, void 0, false, {
         fileName: "[project]/astron-endurance-main/src/components/ui/scroll-progress.jsx",
-        lineNumber: 249,
-        columnNumber: 1
+        lineNumber: 19,
+        columnNumber: 7
     }, ("TURBOPACK compile-time value", void 0));
 });
-ScrollProgress.displayName = '\x53\x63\x72\x6f\x6c\x6c\x50\x72\x6f\x67\x72\x65\x73\x73';
+ScrollProgress.displayName = 'ScrollProgress';
 }),
 "[project]/astron-endurance-main/src/components/common/Loading.jsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
