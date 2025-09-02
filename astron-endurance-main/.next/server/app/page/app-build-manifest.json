@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/bfb61_next_dist_b2ece6fe._.js",
+      "static/chunks/astron-endurance-main_src_app_favicon_ico_mjs_9fc3e859._.js",
+      "static/chunks/[root-of-the-server]__027c8d42._.css",
+      "static/chunks/astron-endurance-main_src_app_layout_3c47fbc3.js",
+      "static/chunks/bfb61_next_e123e4e8._.js",
+      "static/chunks/bfb61_framer-motion_dist_es_73b17e20._.js",
+      "static/chunks/bfb61_motion-dom_dist_es_5710cd9d._.js",
+      "static/chunks/bfb61_tailwind-merge_dist_bundle-mjs_mjs_6e95e79d._.js",
+      "static/chunks/bfb61_5216738a._.js",
+      "static/chunks/astron-endurance-main_src_641d0779._.js",
+      "static/chunks/astron-endurance-main_src_app_loading_71c18cd0.js",
+      "static/chunks/bfb61_next_dist_client_components_builtin_global-error_71c18cd0.js",
+      "static/chunks/astron-endurance-main_src_39df72da._.js",
+      "static/chunks/bfb61_next_36655602._.js",
+      "static/chunks/bfb61_framer-motion_dist_es_6e24f6f9._.js",
+      "static/chunks/bfb61_motion-dom_dist_es_6b32e4c8._.js",
+      "static/chunks/bfb61_63bf37bd._.js",
+      "static/chunks/astron-endurance-main_src_app_page_jsx_71c18cd0._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_f20df001._.js",
+      "static/chunks/bfb61_next_dist_compiled_react-dom_5e1a6917._.js",
+      "static/chunks/bfb61_next_dist_compiled_next-devtools_index_6666cea7.js",
+      "static/chunks/bfb61_next_dist_compiled_17621b95._.js",
+      "static/chunks/bfb61_next_dist_client_b7acf7b8._.js",
+      "static/chunks/bfb61_next_dist_c3795349._.js",
+      "static/chunks/bfb61_@swc_helpers_cjs_88cf76c6._.js",
+      "static/chunks/astron-endurance-main_a0ff3932._.js",
+      "static/chunks/turbopack-astron-endurance-main_5322ebb5._.js"
+    ]
+  }
+}
