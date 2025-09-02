@@ -9,12 +9,33 @@ const orbitron = Orbitron({
 
 export const metadata = {
   title: "Astron Endurance",
-  description: "",
+  description: "Astron Endurance - Engineering a Solar Future",
+  icons: {
+    icon: [
+      { url: "/astron_logo_icon.svg", type: "image/svg+xml" },
+      { url: "/astron_logo_icon.ico" }
+    ],
+    apple: { url: "/apple-icon.svg", type: "image/svg+xml" }
+  },
+  manifest: "/manifest.json",
+  applicationName: "Astron Endurance"
+};
+
+export const viewport = {
+  themeColor: "#E4572E",
+  width: "device-width",
+  initialScale: 1.0
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="hydrated bg-white text-black">
+      <head>
+        {/* Properly formatted favicon references */}
+        <link rel="icon" href="/astron_logo_icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/astron_logo_icon.ico" />
+        <link rel="apple-touch-icon" href="/apple-icon.svg" type="image/svg+xml" />
+      </head>
       <body
         className={`${orbitron.variable} antialiased`}
       >
