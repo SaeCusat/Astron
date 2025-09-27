@@ -111,7 +111,7 @@ const SponsorSection = () => {
     { number: "5+", label: "University Partners", icon: Building },
   ];
 
-  const brochurePath = "/Sponsorship-Brochure.pdf";
+  const brochurePath = "/Astron-Sponsorship-Brochure.pdf";
   const [brochureAvailable, setBrochureAvailable] = useState(true);
   const [checkingBrochure, setCheckingBrochure] = useState(true);
 
