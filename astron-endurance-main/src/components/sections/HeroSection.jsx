@@ -124,13 +124,14 @@ const HeroSection = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="#about" scroll={true}>
-            <Button
-              size="lg"
-              className="bg-[#E4572E] hover:bg-[#E74D24] text-white px-8 py-6 text-lg rounded-full shadow hover:shadow-lg transition-all duration-300 flex items-center gap-3"
-            >
-              <span>Explore Our Journey</span>
-              <ArrowRight size={20} />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-[#E4572E] hover:bg-[#E74D24] text-white px-8 py-6 text-lg rounded-full shadow hover:shadow-lg transition-all duration-300 flex items-center gap-3"
+              >
+                <span>Explore Our Journey</span>
+                <ArrowRight size={20} />
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
