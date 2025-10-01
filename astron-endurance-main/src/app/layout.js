@@ -9,7 +9,7 @@ const orbitron = Orbitron({
 
 export const metadata = {
   title: "Astron Endurance",
-  description: "Astron Endurance - Engineering a Solar Future",
+  description: "Astron Endurance - Driven by Power, Defined by Endurance",
   icons: {
     icon: [
       { url: "/astron_logo_icon.svg", type: "image/svg+xml" },
