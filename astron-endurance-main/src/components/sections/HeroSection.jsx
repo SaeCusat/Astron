@@ -81,7 +81,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <h2 className="text-lg md:text-xl lg:text-2xl text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-            Engineering Tomorrow's Mobility
+            Engineering Tomorrow&apos;s Mobility
           </h2>
 
           <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-6 text-sm md:text-lg">
@@ -108,7 +108,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          From solar-powered innovation to electric excellence - we're building
+          From solar-powered innovation to electric excellence - we&apos;re building
           the future of sustainable mobility, one competition at a time.
         </motion.p>
 

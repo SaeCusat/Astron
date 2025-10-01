@@ -345,7 +345,7 @@ const TeamSection = () => {
                 Join Our Mission
               </h3>
               <p className="text-lg font-orbitron-semi text-gray-300 mb-6">
-                We're always looking for passionate individuals to help drive
+                We&apos;re always looking for passionate individuals to help drive
                 the future of sustainable mobility.
               </p>
               <button className="px-8 py-4 bg-[#E4572E] text-white font-airstrike-bold rounded-full hover:bg-[#E74D24] transition-all duration-300 hover:cursor-pointer shadow-lg text-lg hover:scale-105 active:scale-95">
