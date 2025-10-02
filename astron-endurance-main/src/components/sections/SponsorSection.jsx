@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
 import { Card, CardContent } from "@/components/ui/card";
@@ -386,6 +386,7 @@ const SponsorSection = () => {
                 partnership opportunities that align with your brand values and
                 business objectives.
               </p>
+              <Link href="#contact" scroll={true}>
               <button className="px-8 py-4 bg-gradient-to-r bg-[#E4572E] hover:bg-[#e04a23] ring-[0.25px] ring-white text-white font-orbitron-semi rounded-lg hover:shadow-lg transition-all duration-300 flex items-center gap-3 mx-auto group hover:scale-105 active:scale-95">
                 <span>Contact Us Today</span>
                 <ArrowRight
@@ -393,6 +394,7 @@ const SponsorSection = () => {
                   className="group-hover:translate-x-1 transition-transform duration-300"
                 />
               </button>
+              </Link>
             </CardContent>
           </Card>
         </div>
