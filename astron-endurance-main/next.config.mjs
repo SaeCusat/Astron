@@ -9,7 +9,26 @@ const nextConfig = {
   },
   skipTrailingSlashRedirect: true,
   experimental: {
-    optimizePackageImports: ["framer-motion"],
+    optimizePackageImports: ["framer-motion", "lucide-react", "motion"],
+  },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.optimization.splitChunks = {
+        chunks: "all",
+        cacheGroups: {
+          default: false,
+          vendors: false,
+          commons: {
+            name: "bundle",
+            chunks: "all",
+            minChunks: 1,
+            reuseExistingChunk: true,
+            enforce: true,
+          },
+        },
+      };
+    }
+    return config;
   },
   async generateBuildId() {
     return 'build-' + Date.now();
