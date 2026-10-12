@@ -136,15 +136,15 @@ const SponsorSection = () => {
   }, [brochurePath]);
 
   return (
-    <section id="sponsor" className="min-h-screen bg-[#bfc2e4] py-20">
+    <section id="sponsor" className="min-h-screen bg-[#0d0e13] relative py-20 border-y border-white/10">
       <ScrollProgress className="z-50" />
       <div className="container mx-auto px-6 sm:px-8 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-orbitron-semi text-black mb-6">
+          <h2 className="text-4xl md:text-6xl font-orbitron-semi text-white mb-6">
             Become Our Partner
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-blue-200 via-white to-blue-200 mx-auto rounded-full mb-8" />
-          <p className="text-lg md:text-xl font-orbitron-semi text-black/90 max-w-4xl mx-auto">
+          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8 shadow-[0_0_12px_rgba(228,87,46,0.8)]" />
+          <p className="text-lg md:text-xl font-orbitron-semi text-gray-300 max-w-4xl mx-auto">
             Join us in shaping the future of sustainable mobility. Partner with
             Astron Endurance to drive innovation and create lasting impact in
             electric vehicle technology.
@@ -154,15 +154,15 @@ const SponsorSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto items-stretch">
           {stats.map((stat, index) => (
             <div key={index} className="group h-full">
-              <Card className="relative h-full overflow-hidden bg-gray-900/95 text-white flex flex-col">
+              <Card className="relative h-full overflow-hidden bg-zinc-900/90 border border-white/10 hover:border-[#E4572E]/50 transition-all duration-300 text-white flex flex-col">
                 <CardContent className="p-6 text-center flex flex-col items-center justify-center flex-1">
-                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-white/50 flex items-center justify-center">
+                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-[#E4572E] shadow-lg shadow-[#E4572E]/30 flex items-center justify-center">
                     <stat.icon size={26} className="text-white" />
                   </div>
-                  <div className="text-2xl md:text-3xl font-orbitron-semi text-white mb-2 tracking-wide">
+                  <div className="text-2xl md:text-3xl font-orbitron-semi text-white mb-2 tracking-wide text-[#E4572E]">
                     {stat.number}
                   </div>
-                  <div className="text-sm md:text-base font-orbitron-semi text-white/90 leading-snug max-w-[10ch]">
+                  <div className="text-sm md:text-base font-orbitron-semi text-gray-300 leading-snug max-w-[10ch]">
                     {stat.label}
                   </div>
                 </CardContent>
@@ -172,7 +172,7 @@ const SponsorSection = () => {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-3xl font-orbitron-semi text-black text-center mb-12">
+          <h3 className="text-3xl font-orbitron-semi text-white text-center mb-12">
             Partnership Benefits
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto items-stretch">
@@ -277,7 +277,7 @@ const SponsorSection = () => {
         }
 
         <div className="mb-16">
-          <h3 className="text-3xl font-orbitron-semi text-black text-center mb-12">
+          <h3 className="text-3xl font-orbitron-semi text-white text-center mb-12">
             Our Sponsors
           </h3>
           <div className="relative overflow-hidden w-full">

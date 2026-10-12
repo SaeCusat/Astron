@@ -20,6 +20,12 @@ const AboutSection = () => {
       color: "from-blue-500 to-indigo-600",
     },
     {
+      icon: Target,
+      title: "AIR 50",
+      description: "All India Rank in BAJA 2026",
+      color: "from-orange-500 to-red-600",
+    },
+    {
       icon: Users,
       title: "50+ Members",
       description: "Diverse team of engineers",
@@ -43,17 +49,17 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="min-h-screen bg-gray-300 flex items-center justify-center py-20 border-y-[0.05px] border-gray-400"
+      className="min-h-screen bg-[#0d0e13] relative flex items-center justify-center py-20 border-y border-white/10"
     >
       <ScrollProgress className="z-50" />
       <div className="container mx-auto px-6 sm:px-8 py-16">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-airstrike-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-airstrike-bold text-white mb-6">
             About Astron Endurance
           </h2>
-          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8" />
-          <p className="text-lg md:text-xl font-orbitron-semi text-gray-700 max-w-4xl mx-auto">
+          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8 shadow-[0_0_12px_rgba(228,87,46,0.8)]" />
+          <p className="text-lg md:text-xl font-orbitron-semi text-gray-300 max-w-4xl mx-auto">
             Founded in 2024 by SOE CUSAT students, Astron Endurance is driven by
             a vision of solar-powered mobility. We compete in national
             competitions with innovative electric vehicles, pushing the
@@ -65,29 +71,29 @@ const AboutSection = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center"
+              className="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5 backdrop-blur-sm"
             >
-              <div className="text-3xl md:text-4xl font-airstrike-bold text-gray-900 mb-2">
+              <div className="text-3xl md:text-4xl font-airstrike-bold text-white mb-2 text-[#E4572E]">
                 {stat.number}
               </div>
-              <div className="text-sm md:text-base font-orbitron-semi text-gray-600">
+              <div className="text-sm md:text-base font-orbitron-semi text-gray-400">
                 {stat.label}
               </div>
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-16 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto mb-16 items-stretch">
           {achievements.map((achievement, index) => (
             <div
               key={index}
               className="group h-full"
             >
-              <Card className="relative overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-gray-900/95 backdrop-blur-sm hover:bg-gray-800/95 hover:cursor-pointer group-hover:-translate-y-2 group-hover:scale-[1.02] h-full flex flex-col">
-                <div className="h-2 bg-[#E4572E]" />
+              <Card className="relative overflow-hidden border border-white/10 shadow-2xl hover:shadow-[0_0_25px_rgba(228,87,46,0.25)] transition-all duration-500 bg-zinc-900/90 backdrop-blur-md hover:bg-zinc-800/90 hover:border-[#E4572E]/50 hover:cursor-pointer group-hover:-translate-y-2 group-hover:scale-[1.02] h-full flex flex-col">
+                <div className="h-1.5 bg-gradient-to-r from-[#E4572E] to-[#FF9F1C]" />
 
                 <CardContent className="p-6 text-center flex flex-col flex-1">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#E4572E] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#E4572E] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-[#E4572E]/30">
                     <achievement.icon size={32} className="text-white" />
                   </div>
 
@@ -109,7 +115,7 @@ const AboutSection = () => {
         </div>
 
         <div className="text-center">
-          <Card className="relative max-w-4xl mx-auto bg-gray-900/90 backdrop-blur-sm border-0 shadow-2xl overflow-hidden hover:bg-gray-800/90 transition-colors duration-500">
+          <Card className="relative max-w-4xl mx-auto bg-zinc-900/90 backdrop-blur-md border border-white/10 shadow-2xl overflow-hidden hover:border-[#E4572E]/40 hover:bg-zinc-800/90 transition-all duration-500">
             <CardContent className="p-8">
               <div className="flex items-center justify-center mb-6">
                 <Target size={48} className="text-[#E4572E] mr-4" />

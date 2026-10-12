@@ -44,7 +44,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-28 bg-slate-300 flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen pt-28 bg-[#08080a] flex items-center justify-center overflow-hidden"
     >
       <ScrollProgress className="z-50" />
       <div className="absolute inset-0 z-10 overflow-hidden">
@@ -56,20 +56,20 @@ const HeroSection = () => {
           <img
             src="/images/astron_images/image-12.jpeg"
             alt="Team background"
-            className="w-full h-full object-cover scale-110 lg:scale-100 transition-transform duration-[1500ms] ease-out"
-            loading="lazy"
+            className="w-full h-full object-cover scale-105 lg:scale-100 transition-transform duration-[1500ms] ease-out opacity-90 contrast-105 brightness-100"
+            loading="eager"
           />
         </picture>
-        <div className="absolute inset-0 bg-black/55 lg:bg-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+        <div className="absolute inset-0 bg-black/20 lg:bg-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#08080a]/75 via-transparent to-[#08080a]" />
       </div>
       <div className="relative z-10 text-center px-6 sm:px-8 max-w-6xl mx-auto">
         <div className="mb-8">
           <h1 className="leading-none mb-4">
-            <span className="block font-airstrike-bold tracking-tight text-[clamp(3.5rem,14vw,13rem)] text-[#E4572E] drop-shadow-[0_4px_10px_rgba(0,0,0,0.6)]">
+            <span className="block font-airstrike-bold tracking-tight text-[clamp(3.5rem,14vw,13rem)] text-[#E4572E] drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
               ASTRON
             </span>
-            <span className="block font-orbitron-semi tracking-wide text-[clamp(1.9rem,5vw,15rem)] text-white drop-shadow-[0_4px_10px_rgba(0,0,0,0.6)]">
+            <span className="block font-orbitron-semi tracking-wide text-[clamp(1.9rem,5vw,15rem)] text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
               ENDURANCE
             </span>
           </h1>
@@ -81,22 +81,22 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <h2 className="text-lg md:text-xl lg:text-2xl text-white mb-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
+          <h2 className="text-lg md:text-xl lg:text-2xl text-white mb-4 drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] font-medium">
             Engineering Tomorrow&apos;s Mobility
           </h2>
 
           <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-6 text-sm md:text-lg">
-            <span className="text-[#E4572E] flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
+            <span className="text-[#E4572E] flex items-center gap-2 drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] font-semibold">
               <Zap size={20} />
               Electric
             </span>
-            <span className="hidden md:inline text-gray-300">•</span>
-            <span className="text-[#E4572E] flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
+            <span className="hidden md:inline text-gray-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">•</span>
+            <span className="text-[#E4572E] flex items-center gap-2 drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] font-semibold">
               <Target size={20} />
               Innovative
             </span>
-            <span className="hidden md:inline text-gray-300">•</span>
-            <span className="text-[#E4572E] flex items-center gap-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
+            <span className="hidden md:inline text-gray-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">•</span>
+            <span className="text-[#E4572E] flex items-center gap-2 drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)] font-semibold">
               <Award size={20} />
               Sustainable
             </span>
@@ -104,7 +104,7 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.p
-          className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-12 text-gray-200 leading-relaxed px-4 md:bg-transparent rounded-xl md:rounded-none py-4 md:py-0 drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]"
+          className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-12 text-gray-100 leading-relaxed px-4 rounded-xl py-2 drop-shadow-[0_3px_10px_rgba(0,0,0,0.95)]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}

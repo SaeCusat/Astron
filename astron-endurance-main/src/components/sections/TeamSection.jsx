@@ -24,14 +24,24 @@ import { BorderBeam } from "@/components/ui/border-beam";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Kevin",
+      name: "Ashwin P A",
       role: "Captain",
-      photo: "/team/Kevin pic.jpg",
+      photo: "/team/HEADS/AHWIN.png",
       icon: Crown,
       gradient: "from-[#E4572E] to-[#E74D24]",
       accent: "text-[#E4572E]",
       bgColor: "bg-gradient-to-br from-orange-50 to-red-50",
       description: "Leading the team with vision and innovation",
+    },
+    {
+      name: "Sreeram V M",
+      role: "Vice Captain",
+      photo: "/team/HEADS/SREERAM.png",
+      icon: Award,
+      gradient: "from-emerald-500 to-teal-600",
+      accent: "text-emerald-500",
+      bgColor: "bg-gradient-to-br from-emerald-50 to-teal-50",
+      description: "Strategic planning and team coordination",
     },
     {
       name: "Aravind Krishna V",
@@ -52,16 +62,6 @@ const TeamSection = () => {
       accent: "text-emerald-500",
       bgColor: "bg-gradient-to-br from-emerald-50 to-teal-50",
       description: "Managing BSVC operations and coordination",
-    },
-    {
-      name: "Harinadh",
-      role: "Vice-Captain",
-      photo: "/team/Harinadh_Sadish_Photo.jpg",
-      icon: Award,
-      gradient: "from-purple-500 to-indigo-600",
-      accent: "text-purple-500",
-      bgColor: "bg-gradient-to-br from-purple-50 to-indigo-50",
-      description: "Strategic planning and team coordination",
     },
     {
       name: "Sidharth",
@@ -148,16 +148,16 @@ const TeamSection = () => {
   return (
     <section
       id="team"
-      className="min-h-screen bg-gray-300 flex items-center justify-center py-20"
+      className="min-h-screen bg-[#0d0e13] flex items-center justify-center py-20 border-y border-white/10"
     >
       <ScrollProgress className="z-50" />
       <div className="container mx-auto px-6 sm:px-8 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-airstrike-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-airstrike-bold text-white mb-6">
             Our Team
           </h2>
-          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8" />
-          <p className="text-lg md:text-xl font-orbitron-semi text-gray-700 max-w-4xl mx-auto">
+          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8 shadow-[0_0_12px_rgba(228,87,46,0.8)]" />
+          <p className="text-lg md:text-xl font-orbitron-semi text-gray-300 max-w-4xl mx-auto">
             Meet the brilliant minds behind Astron Endurance. Our diverse team
             of engineers, designers, and innovators work together to create the
             future of sustainable mobility.
@@ -267,7 +267,7 @@ const TeamSection = () => {
                 <div className={`h-2 bg-gradient-to-r ${member.gradient}`} />
 
                 <CardHeader className="text-center pb-4 pt-6 relative">
-                  <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-200 shadow group-hover:shadow-lg transition-all duration-500">
+                  <div className="relative w-32 h-32 mx-auto mb-4 rounded-2xl overflow-hidden border-2 border-[#E4572E]/50 shadow group-hover:shadow-lg transition-all duration-500">
                     <div
                       className={`absolute inset-0 bg-gradient-to-br ${member.gradient} opacity-20`}
                     />

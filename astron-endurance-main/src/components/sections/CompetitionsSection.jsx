@@ -27,6 +27,7 @@ const CompetitionsSection = () => {
       date: "2025",
       location: "National Level",
       achievements: [
+        "AIR 50 (BAJA 2026)",
         "Design Excellence",
         "Performance Testing",
         "Innovation Award",
@@ -97,15 +98,15 @@ const CompetitionsSection = () => {
   ];
 
   return (
-    <section id="competitions" className="min-h-screen bg-slate-300 py-20">
+    <section id="competitions" className="min-h-screen bg-[#08080a] py-20">
       <ScrollProgress className="z-50" />
       <div className="container mx-auto px-6 sm:px-8 py-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-airstrike-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-6xl font-airstrike-bold text-white mb-6">
             Our Competitions
           </h2>
-          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8" />
-          <p className="text-lg md:text-xl font-orbitron-semi text-gray-700 max-w-4xl mx-auto">
+          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8 shadow-[0_0_12px_rgba(228,87,46,0.8)]" />
+          <p className="text-lg md:text-xl font-orbitron-semi text-gray-300 max-w-4xl mx-auto">
             We participate in prestigious national competitions, showcasing our
             innovation in electric and solar-powered vehicle technologies.
           </p>
@@ -117,9 +118,9 @@ const CompetitionsSection = () => {
               key={index}
               className="group"
             >
-              <Card className="relative h-full overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-gray-900/95 backdrop-blur-sm hover:bg-gray-800/95 group-hover:scale-[1.02]">
+              <Card className="relative h-full overflow-hidden border border-white/10 shadow-2xl hover:shadow-[0_0_20px_rgba(228,87,46,0.25)] transition-all duration-500 bg-zinc-900/90 backdrop-blur-sm hover:bg-zinc-800/90 hover:border-[#E4572E]/50 group-hover:scale-[1.02]">
                 <CardContent className="p-4 text-center">
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-[#E4572E] flex items-center justify-center shadow-lg">
+                  <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-[#E4572E] flex items-center justify-center shadow-lg shadow-[#E4572E]/40">
                     <stat.icon size={24} className="text-white" />
                   </div>
                   <div className="text-2xl font-airstrike-bold text-white mb-1">
@@ -143,8 +144,8 @@ const CompetitionsSection = () => {
               key={index}
               className="group"
             >
-              <Card className="relative h-full overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-gray-900/95 backdrop-blur-sm hover:bg-gray-800/95 group-hover:scale-[1.02]">
-                <div className="h-3 bg-[#E4572E]" />
+              <Card className="relative h-full overflow-hidden border border-white/10 shadow-2xl hover:shadow-[0_0_25px_rgba(228,87,46,0.25)] transition-all duration-500 bg-zinc-900/90 backdrop-blur-sm hover:bg-zinc-800/90 hover:border-[#E4572E]/50 group-hover:scale-[1.02]">
+                <div className="h-1.5 bg-gradient-to-r from-[#E4572E] to-[#FF9F1C]" />
 
                 <CardContent className="p-0">
                   <div className="relative h-64 overflow-hidden">

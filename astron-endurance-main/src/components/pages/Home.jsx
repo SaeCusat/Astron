@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import Navigation from "../common/Navigation";
 import Loading from "../common/Loading";
 import HeroSection from "../sections/HeroSection";
@@ -12,35 +13,39 @@ import { ScrollProgress } from "../ui/scroll-progress";
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <>
+      <AnimatePresence mode="wait">
+        {isLoading && (
+          <motion.div
+            key="loading-screen"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 1.02, filter: "blur(4px)" }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+            className="fixed inset-0 z-[100]"
+          >
+            <Loading onComplete={() => setIsLoading(false)} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <ScrollProgress />
       <Navigation />
-      <main>
+      <main className="bg-[#08080a] text-white">
         <HeroSection />
         <AboutSection />
         <CompetitionsSection />
         <SponsorSection />
         <ContactSection />
+
+
       </main>
-      <footer className="bg-gray-900 text-center py-4">
+      <footer className="bg-[#050507] border-t border-white/10 text-center py-6">
         <div id="__build_attrib" className="container mx-auto">
           <div style={{
             fontSize: '12px',
             fontFamily: 'system-ui,monospace',
-            color: 'rgba(255,255,255,0.82)',
+            color: 'rgba(255,255,255,0.7)',
             padding: '4px 10px 5px',
             letterSpacing: '0.5px',
             lineHeight: '1.15',
@@ -49,7 +54,7 @@ const Home = () => {
             Made by <a href="https://github.com/nandhu-44" target="_blank" rel="noopener noreferrer" style={{
               fontWeight: 600,
               textDecoration: 'none',
-              color: '#fff',
+              color: '#E4572E',
             }}>nandhu-44</a>
           </div>
         </div>
