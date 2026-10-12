@@ -75,7 +75,7 @@ const Navigation = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#2f2d68] border-b border-[#2f2d68] shadow"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#08080a]/85 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/50"
     >
       <div className="container mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-16 md:h-20">
@@ -148,7 +148,7 @@ const Navigation = () => {
               duration: 0.3,
               ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="md:hidden fixed z-40 flex flex-col bg-[#2f2d68]"
+            className="md:hidden fixed z-40 flex flex-col bg-[#08080a]/98 backdrop-blur-xl border-t border-white/10"
             style={{
               position: "fixed",
               top: "64px",

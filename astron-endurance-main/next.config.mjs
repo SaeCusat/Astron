@@ -7,9 +7,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  skipTrailingSlashRedirect: true,
   experimental: {
     optimizePackageImports: ["framer-motion"],
-    skipTrailingSlashRedirect: true,
   },
   async generateBuildId() {
     return 'build-' + Date.now();

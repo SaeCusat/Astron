@@ -29,7 +29,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="hydrated bg-white text-black">
+    <html lang="en" className="dark bg-[#08080a] text-white scroll-smooth">
       <head>
         {/* Properly formatted favicon references */}
         <link rel="icon" href="/astron_logo_icon.svg" type="image/svg+xml" />
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/apple-icon.svg" type="image/svg+xml" />
       </head>
       <body
-        className={`${orbitron.variable} antialiased`}
+        className={`${orbitron.variable} antialiased bg-[#08080a] text-white min-h-screen selection:bg-[#E4572E] selection:text-white`}
       >
         {children}
       </body>
