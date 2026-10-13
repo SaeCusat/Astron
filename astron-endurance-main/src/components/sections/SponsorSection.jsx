@@ -136,33 +136,32 @@ const SponsorSection = () => {
   }, [brochurePath]);
 
   return (
-    <section id="sponsor" className="min-h-screen bg-[#0d0e13] relative py-20 border-y border-white/10">
-      <ScrollProgress className="z-50" />
-      <div className="container mx-auto px-6 sm:px-8 py-16">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-orbitron-semi text-white mb-6">
+    <section id="sponsor" className="min-h-screen bg-[#0d0e13] relative py-14 sm:py-20 border-y border-white/10">
+      <div className="container mx-auto px-4 sm:px-8 py-10 sm:py-16">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-orbitron-semi text-white mb-4 sm:mb-6">
             Become Our Partner
           </h2>
-          <div className="w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-8 shadow-[0_0_12px_rgba(228,87,46,0.8)]" />
-          <p className="text-lg md:text-xl font-orbitron-semi text-gray-300 max-w-4xl mx-auto">
+          <div className="w-24 sm:w-32 h-1 bg-[#E4572E] mx-auto rounded-full mb-6 sm:mb-8 shadow-[0_0_12px_rgba(228,87,46,0.8)]" />
+          <p className="text-base sm:text-lg md:text-xl font-orbitron-semi text-gray-300 max-w-4xl mx-auto px-2">
             Join us in shaping the future of sustainable mobility. Partner with
             Astron Endurance to drive innovation and create lasting impact in
             electric vehicle technology.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto items-stretch">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-4xl mx-auto items-stretch">
           {stats.map((stat, index) => (
             <div key={index} className="group h-full">
               <Card className="relative h-full overflow-hidden bg-zinc-900/90 border border-white/10 hover:border-[#E4572E]/50 transition-all duration-300 text-white flex flex-col">
-                <CardContent className="p-6 text-center flex flex-col items-center justify-center flex-1">
-                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-[#E4572E] shadow-lg shadow-[#E4572E]/30 flex items-center justify-center">
-                    <stat.icon size={26} className="text-white" />
+                <CardContent className="p-4 sm:p-6 text-center flex flex-col items-center justify-center flex-1">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-[#E4572E] shadow-lg shadow-[#E4572E]/30 flex items-center justify-center">
+                    <stat.icon size={22} className="text-white sm:w-6 sm:h-6" />
                   </div>
-                  <div className="text-2xl md:text-3xl font-orbitron-semi text-white mb-2 tracking-wide text-[#E4572E]">
+                  <div className="text-xl sm:text-2xl md:text-3xl font-orbitron-semi text-white mb-1 sm:mb-2 tracking-wide text-[#E4572E]">
                     {stat.number}
                   </div>
-                  <div className="text-sm md:text-base font-orbitron-semi text-gray-300 leading-snug max-w-[10ch]">
+                  <div className="text-xs sm:text-sm md:text-base font-orbitron-semi text-gray-300 leading-snug max-w-[12ch]">
                     {stat.label}
                   </div>
                 </CardContent>
@@ -171,24 +170,24 @@ const SponsorSection = () => {
           ))}
         </div>
 
-        <div className="mb-16">
-          <h3 className="text-3xl font-orbitron-semi text-white text-center mb-12">
+        <div className="mb-12 sm:mb-16">
+          <h3 className="text-2xl sm:text-3xl font-orbitron-semi text-white text-center mb-8 sm:mb-12">
             Partnership Benefits
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto items-stretch">
             {benefits.map((benefit, index) => (
               <div key={index} className="group h-full">
                 <Card className="relative overflow-hidden bg-gray-900/95 text-white h-full flex flex-col">
-                  <CardContent className="p-6 text-center h-full flex flex-col flex-1">
+                  <CardContent className="p-5 sm:p-6 text-center h-full flex flex-col flex-1">
                     <div
-                      className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${benefit.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
+                      className={`w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-gradient-to-r ${benefit.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
                     >
-                      <benefit.icon size={32} className="text-white" />
+                      <benefit.icon size={28} className="text-white sm:w-8 sm:h-8" />
                     </div>
-                    <h4 className="text-lg font-orbitron-semi text-white mb-3">
+                    <h4 className="text-base sm:text-lg font-orbitron-semi text-white mb-2 sm:mb-3">
                       {benefit.title}
                     </h4>
-                    <p className="text-sm font-orbitron-semi text-white/80 flex-grow">
+                    <p className="text-xs sm:text-sm font-orbitron-semi text-white/80 flex-grow">
                       {benefit.description}
                     </p>
                   </CardContent>
@@ -198,112 +197,34 @@ const SponsorSection = () => {
           </div>
         </div>
 
-
-        {
-          /* <div className="mb-16">
-          <h3 className="text-3xl font-orbitron-semi text-black text-center mb-12">
-            Sponsorship Tiers
-          </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-            {sponsorshipTiers.map((tier, index) => (
-              <div key={index} className="group relative h-full">
-                <Card
-                  className={`relative overflow-hidden border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 bg-gray-900/95 backdrop-blur-sm hover:bg-gray-800/95 ${
-                    tier.recommended ? "ring-2 ring-yellow-400" : ""
-                  } group-hover:scale-[1.02] h-full flex flex-col min-h-[520px]`}
-                >
-                  {tier.recommended && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                      <Badge className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-orbitron-semi px-4 py-1 pt-4">
-                        RECOMMENDED
-                      </Badge>
-                    </div>
-                  )}
-
-                  <div className={`h-3 bg-gradient-to-r ${tier.color}`} />
-
-                  <CardContent className="p-8 flex flex-col flex-1">
-                    <div className="text-center mb-6">
-                      <div
-                        className={`w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r ${tier.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                      >
-                        <tier.icon size={40} className="text-white" />
-                      </div>
-                      <h3 className="text-2xl font-orbitron-semi text-white mb-2">
-                        {tier.title}
-                      </h3>
-                      <p className="text-gray-300 font-orbitron-semi text-sm">
-                        {tier.description}
-                      </p>
-                    </div>
-
-                    <div className="space-y-3 flex-1">
-                      {tier.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start gap-3">
-                          <CheckCircle
-                            size={16}
-                            className="text-green-400 mt-0.5 flex-shrink-0"
-                          />
-                          <span className="text-gray-300 font-orbitron-semi text-sm">
-                            {feature}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <button
-                      className={`w-full mt-8 px-6 py-3 bg-gradient-to-r ${tier.color} text-white font-orbitron-semi rounded-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group/btn hover:scale-[1.02] active:scale-95`}
-                    >
-                      <span>Get Started</span>
-                      <ArrowRight
-                        size={16}
-                        className="group-hover/btn:translate-x-1 transition-transform duration-300"
-                      />
-                    </button>
-
-                    <div
-                      className={`w-20 h-0.5 bg-gradient-to-r ${tier.color} mx-auto mt-6 group-hover:w-28 transition-all duration-300 rounded-full`}
-                    />
-                  </CardContent>
-
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${tier.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}
-                  />
-                </Card>
-              </div>
-            ))}
-          </div>
-        </div> */
-        }
-
-        <div className="mb-16">
-          <h3 className="text-3xl font-orbitron-semi text-white text-center mb-12">
+        <div className="mb-12 sm:mb-16">
+          <h3 className="text-2xl sm:text-3xl font-orbitron-semi text-white text-center mb-8 sm:mb-12">
             Our Sponsors
           </h3>
           <div className="relative overflow-hidden w-full">
-            <div className="flex animate-scroll space-x-12 w-max">
-              <div className="flex items-center justify-center w-48 h-24">
+            <div className="flex animate-scroll space-x-6 sm:space-x-12 w-max items-center py-2">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-1.jpg"
                   alt="Sponsor 1"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-2.png"
                   alt="Sponsor 2"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-3.png"
                   alt="Sponsor 3"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-4.svg"
                   alt="Sponsor 4"
@@ -311,28 +232,28 @@ const SponsorSection = () => {
                 />
               </div>
 
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-1.jpg"
                   alt="Sponsor 1"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-2.png"
                   alt="Sponsor 2"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-3.png"
                   alt="Sponsor 3"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-4.svg"
                   alt="Sponsor 4"
@@ -340,28 +261,28 @@ const SponsorSection = () => {
                 />
               </div>
 
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-1.jpg"
                   alt="Sponsor 1"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-2.png"
                   alt="Sponsor 2"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-3.png"
                   alt="Sponsor 3"
                   className="max-w-full max-h-full object-contain transition-all duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center w-48 h-24">
+              <div className="flex items-center justify-center w-36 h-20 sm:w-48 sm:h-24 px-2">
                 <img
                   src="/sponsors/astron-sponsor-4.svg"
                   alt="Sponsor 4"
@@ -372,26 +293,26 @@ const SponsorSection = () => {
           </div>
         </div>
 
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 sm:mb-12">
           <Card className="relative max-w-4xl mx-auto bg-gray-900/95 overflow-hidden">
-            <CardContent className="p-12 text-center">
-              <div className="flex items-center justify-center mb-6">
-                <Handshake size={48} className="text-orange-400 mr-4" />
-                <h3 className="text-3xl font-orbitron-semi text-white">
+            <CardContent className="p-6 sm:p-12 text-center">
+              <div className="flex items-center justify-center mb-4 sm:mb-6">
+                <Handshake size={36} className="text-orange-400 mr-3 sm:mr-4 sm:w-12 sm:h-12" />
+                <h3 className="text-2xl sm:text-3xl font-orbitron-semi text-white">
                   Ready to Partner?
                 </h3>
               </div>
-              <p className="text-lg text-white/90 font-orbitron-semi mb-8 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 font-orbitron-semi mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Contact us to discuss customized sponsorship packages and
                 partnership opportunities that align with your brand values and
                 business objectives.
               </p>
               <Link href="#contact" scroll={true}>
-              <button className="px-8 py-4 bg-gradient-to-r bg-[#E4572E] hover:bg-[#e04a23] ring-[0.25px] ring-white text-white font-orbitron-semi rounded-lg hover:shadow-lg transition-all duration-300 flex items-center gap-3 mx-auto group hover:scale-105 active:scale-95">
+              <button className="px-6 sm:px-8 py-3.5 sm:py-4 bg-[#E4572E] hover:bg-[#e04a23] ring-[0.25px] ring-white text-white font-orbitron-semi rounded-lg hover:shadow-lg transition-all duration-300 flex items-center gap-2.5 sm:gap-3 mx-auto group hover:scale-105 active:scale-95 text-sm sm:text-base">
                 <span>Contact Us Today</span>
                 <ArrowRight
-                  size={20}
-                  className="group-hover:translate-x-1 transition-transform duration-300"
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform duration-300 sm:w-5 sm:h-5"
                 />
               </button>
               </Link>
@@ -402,11 +323,11 @@ const SponsorSection = () => {
         <div className="text-center">
           <Card className="relative max-w-3xl mx-auto bg-gray-900/95 backdrop-blur-sm border-0 overflow-hidden shadow-2xl">
             <div className="h-2 bg-[#E4572E]" />
-            <CardContent className="p-10">
-              <h3 className="text-2xl font-airstrike-bold text-white mb-4 tracking-wide">
+            <CardContent className="p-6 sm:p-10">
+              <h3 className="text-xl sm:text-2xl font-airstrike-bold text-white mb-3 sm:mb-4 tracking-wide">
                 Sponsorship Brochure
               </h3>
-              <p className="text-gray-300 font-orbitron-semi mb-8 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-gray-300 font-orbitron-semi mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Get the full details of our impact, visibility metrics,
                 deliverables and partnership roadmap in a concise PDF.
               </p>
@@ -415,10 +336,10 @@ const SponsorSection = () => {
                   <a
                     href={brochurePath}
                     download
-                    className="inline-flex items-center gap-3 px-10 py-4 bg-[#E4572E] hover:bg-[#e04a23] text-white font-orbitron-semi rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group active:scale-95"
+                    className="inline-flex items-center gap-2.5 sm:gap-3 px-6 sm:px-10 py-3.5 sm:py-4 bg-[#E4572E] hover:bg-[#e04a23] text-white font-orbitron-semi rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group active:scale-95"
                     aria-label="Download sponsorship brochure PDF"
                   >
-                    <span className="text-sm md:text-base tracking-wide">
+                    <span className="text-xs sm:text-sm md:text-base tracking-wide">
                       Download Brochure
                     </span>
                     <Download
@@ -428,8 +349,8 @@ const SponsorSection = () => {
                   </a>
                 )
                 : (
-                  <div className="inline-flex items-center gap-3 px-10 py-4 bg-gray-700/50 text-gray-400 font-orbitron-semi rounded-full border border-gray-600">
-                    <span className="text-sm md:text-base tracking-wide">
+                  <div className="inline-flex items-center gap-2.5 sm:gap-3 px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-700/50 text-gray-400 font-orbitron-semi rounded-full border border-gray-600">
+                    <span className="text-xs sm:text-sm md:text-base tracking-wide">
                       Brochure Unavailable
                     </span>
                   </div>

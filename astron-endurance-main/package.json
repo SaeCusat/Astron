@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack -p 3003",
+    "dev": "next dev -p 3003",
+    "clean": "node -e \"const fs = require('fs'); fs.rmSync('.next', { recursive: true, force: true }); console.log('.next chunk files and build cache removed successfully');\"",
     "build": "next build",
+    "build:clean": "npm run clean && next build",
+    "dev:clean": "npm run clean && next dev -p 3003",
     "start": "next start",
     "lint": "next lint"
   },
