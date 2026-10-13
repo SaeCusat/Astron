@@ -5,7 +5,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
-import { ScrollProgress } from "../ui/scroll-progress";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -131,6 +130,7 @@ const Navigation = () => {
           <motion.button
             className="md:hidden p-2 text-white hover:text-[#E4572E] transition-colors duration-200 relative z-50 hover:cursor-pointer"
             onClick={toggleMenu}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             whileTap={{ scale: 0.95 }}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -233,7 +233,6 @@ const Navigation = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <ScrollProgress className="z-50" />
     </motion.nav>
   );
 };

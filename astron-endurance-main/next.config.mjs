@@ -9,33 +9,48 @@ const nextConfig = {
   },
   skipTrailingSlashRedirect: true,
   experimental: {
-    optimizePackageImports: ["framer-motion", "lucide-react", "motion"],
+    optimizePackageImports: [
+      "framer-motion",
+      "lucide-react",
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-slot",
+      "motion"
+    ],
   },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.optimization.splitChunks = {
-        chunks: "all",
-        cacheGroups: {
-          default: false,
-          vendors: false,
-          commons: {
-            name: "bundle",
-            chunks: "all",
-            minChunks: 1,
-            reuseExistingChunk: true,
-            enforce: true,
-          },
-        },
-      };
-    }
-    return config;
+  onDemandEntries: {
+    maxInactiveAge: 20 * 1000,
+    pagesBufferLength: 2,
   },
-  async generateBuildId() {
-    return 'build-' + Date.now();
-  },
+  productionBrowserSourceMaps: false,
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
+  webpack: (config, { dev, isServer }) => {
+    // Memory optimization: prevent massive chunks and reduce dev memory overhead
+    config.optimization = {
+      ...config.optimization,
+      moduleIds: 'deterministic',
+      splitChunks: {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 244000,
+        cacheGroups: {
+          defaultVendors: {
+            test: /[\\/]node_modules[\\/]/,
+            priority: -10,
+            reuseExistingChunk: true,
+          },
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
+        },
+      },
+    };
+    return config;
+  },
   async headers() {
     return [
       {
