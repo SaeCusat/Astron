@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { ScrollProgress } from "../ui/scroll-progress";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -9,8 +8,6 @@ const Logo = ({ className = "", size = "default" }) => {
   const widthMap = { small: 140, default: 180, large: 240 };
   const w = widthMap[size] || widthMap.default;
   return (
-    <>
-    <ScrollProgress className="z-50" />
     <motion.div
       className={`flex items-center ${className}`}
       whileHover={{ scale: 1.04 }}
@@ -117,8 +114,7 @@ const Logo = ({ className = "", size = "default" }) => {
           </svg>
         </motion.div>
       </Link>
-  </motion.div>
-  </>
+    </motion.div>
   );
 };
 
